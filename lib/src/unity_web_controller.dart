@@ -13,6 +13,13 @@ class UnityWebController {
     });
   }
 
+  /// Post message to unity from flutter. This method takes in a string [data].
+  /// The [gameObject] must match the name of an actual unity game object in a scene at runtime, and the [methodName],
+  /// must exist in a `MonoDevelop` `class` and also exposed as a method. [message] is an parameter taken by the method
+  ///
+  /// ```dart
+  /// sendDataToUnity("GameManager", "openScene", "ThirdScene")
+  /// ```
   sendDataToUnity({
     required String gameObject,
     required String method,

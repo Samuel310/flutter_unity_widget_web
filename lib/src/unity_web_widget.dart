@@ -10,8 +10,17 @@ class UnityWebWidget extends StatefulWidget {
     Key? key,
   }) : super(key: key);
 
+  /// location of the index.html file inside unity folder
+  /// ```dart
+  /// String url = 'http://localhost:${Uri.base.port}/unityBuild/index.html'
+  /// ```
   final String url;
+
+  /// listen for [data] emitted by unity
   final void Function(String data) listenMessageFromUnity;
+
+  /// called when unity is loaded.
+  /// use [unityWebController] to send data to unity.
   final void Function(UnityWebController unityWebController) onUnityLoaded;
 
   @override
