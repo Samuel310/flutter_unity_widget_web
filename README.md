@@ -17,7 +17,7 @@ Flutter unity widget for embedding unity in flutter web apps. Now you can render
 
 1. Place the exported unity webGL build folder inside web folder.
 
-![Web folder structure](/assets/fs.png "Location to place exported unity web folder")
+![Web folder structure](https://github.com/Samuel310/flutter_unity_widget_web/blob/main/assets/fs.png?raw=true "Location to place exported unity web folder")
 
 2. Modify the index.html file inside unity webGL build folder.
 
@@ -38,7 +38,7 @@ Flutter unity widget for embedding unity in flutter web apps. Now you can render
 
      index.html file after adding the above script.
 
-     ![index.html file image](/assets/index1.png "index.html will look like this after adding the above script")
+     ![index.html file image](https://github.com/Samuel310/flutter_unity_widget_web/blob/main/assets/index1.png?raw=true "index.html will look like this after adding the above script")
 
    - Add following script in index.html.
 
@@ -49,7 +49,7 @@ Flutter unity widget for embedding unity in flutter web apps. Now you can render
 
      index.html file after adding the above script.
 
-     ![index.html file image](/assets/index2.png "index.html will look like this after adding the above script")
+     ![index.html file image](https://github.com/Samuel310/flutter_unity_widget_web/blob/main/assets/index2.png?raw=true "index.html will look like this after adding the above script")
 
 ## Usage
 
