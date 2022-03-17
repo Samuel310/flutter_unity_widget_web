@@ -105,3 +105,9 @@ class _UnityScreenState extends State<UnityScreen> {
 - `onUnityLoaded(UnityWebController controller)` (Unity to flutter web binding and listener when unity is loaded)
 - `listenMessageFromUnity(String data)` (Listen for message sent from unity to flutter web)
 - `sendDataToUnity(String gameObject, String method, String data)` (Allows you to send date from flutter web to untiy)
+
+## Features and bugs
+
+Please file feature requests and bugs at the [issue tracker][tracker].
+
+[tracker]: https://github.com/Samuel310/flutter_unity_widget_web/issues
