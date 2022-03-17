@@ -36,6 +36,8 @@ Flutter unity widget for embedding unity in flutter web apps. Now you can render
      });
      ```
 
+     index.html file after adding the above script.
+
      ![index.html file image](/assets/index1.png "index.html will look like this after adding the above script")
 
    - Add following script in index.html.
@@ -44,6 +46,8 @@ Flutter unity widget for embedding unity in flutter web apps. Now you can render
      window.parent.postMessage("unity_loaded", "*");
      globalUnityInstance = unityInstance;
      ```
+
+     index.html file after adding the above script.
 
      ![index.html file image](/assets/index2.png "index.html will look like this after adding the above script")
 
