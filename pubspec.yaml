@@ -1,7 +1,7 @@
 name: flutter_unity_widget_web
-description: A new Flutter package project.
+description: Flutter unity widget for embedding unity in flutter web apps.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Samuel310/flutter_unity_widget_web/tree/main
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
