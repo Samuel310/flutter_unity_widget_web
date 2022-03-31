@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_unity_widget_web/src/unity_web_controller.dart';
-import 'package:webviewx/webviewx.dart';
+import 'unity_web_controller.dart';
+import 'unity_widget_impl_stub.dart' if (dart.library.js) 'unity_widget_impl_web.dart';
 
-class UnityWebWidget extends StatefulWidget {
+class UnityWebWidget extends StatelessWidget {
   const UnityWebWidget({
     required this.url,
     required this.listenMessageFromUnity,
@@ -24,41 +24,11 @@ class UnityWebWidget extends StatefulWidget {
   final void Function(UnityWebController unityWebController) onUnityLoaded;
 
   @override
-  State<UnityWebWidget> createState() => _UnityWebWidgetState();
-}
-
-class _UnityWebWidgetState extends State<UnityWebWidget> {
-  late UnityWebController _unityWebHelper;
-
-  @override
-  void initState() {
-    _unityWebHelper = UnityWebController(
-      listenMessageFromUnity: (data) {
-        if (data == 'unity_loaded') {
-          widget.onUnityLoaded(_unityWebHelper);
-        } else {
-          widget.listenMessageFromUnity(data);
-        }
-      },
-    );
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _unityWebHelper.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return WebViewX(
-      initialContent: widget.url,
-      javascriptMode: JavascriptMode.unrestricted,
-      initialSourceType: SourceType.url,
-      onWebViewCreated: (controller) {},
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
+    return getUnityWidget(
+      url: url,
+      listenMessageFromUnity: listenMessageFromUnity,
+      onUnityLoaded: onUnityLoaded,
     );
   }
 }
