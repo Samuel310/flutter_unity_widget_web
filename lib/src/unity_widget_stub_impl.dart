@@ -7,5 +7,5 @@ Widget getUnityWidget({
   required void Function(UnityWebController unityWebController) onUnityLoaded,
   Key? key,
 }) {
-  throw UnsupportedError('unity_widget_web only supports for web currently.');
+  throw UnimplementedError('unity_widget_web only supports web.');
 }

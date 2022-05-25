@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'unity_web_controller.dart';
-import 'unity_widget_impl_stub.dart' if (dart.library.js) 'unity_widget_impl_web.dart';
+import 'unity_widget_stub_impl.dart' if (dart.library.js) 'unity_widget_web_impl.dart';
 
 class UnityWebWidget extends StatelessWidget {
   const UnityWebWidget({
